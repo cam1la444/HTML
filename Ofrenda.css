@@ -1,27 +1,83 @@
-html{
-    font-family: 'Montserrat', sans-serif;
-}
-
 body{
-    margin: 0;
-    background-color: #efefef;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
 
 header{
-    background-color: #364552;
-    color: white;
-    padding: 3rem 2rem;
+    display: flex;
+    height: 150px;
+    background-color: #37517e;
+    align-items: center;
+    padding: 50px;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif
+.titu{
+    font-size: 300%;
+    text-align: center;
+    font-weight: bold;
 }
+
+.contenido p{
+    color: black;
+    letter-spacing: 1px;
+    font-size: 220%;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.info p{
+    letter-spacing: 1px;
+    font-size: 25px;
+    text-align: justify;
+    background-color: #ffffa5;
+    padding: 35px;
+    width: auto;
+    margin-bottom: auto;
+}
+
+.boton a{
+    margin-top: 40px;
+    color: #37517e;
+    background-color: #fdbb00;
+    border: 1px solid goldenrod;
+    padding: 10px 35px;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: auto;
+    cursor: pointer;
+    transition: all 300ms;
+    box-shadow: none;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+}
+
+.boton a:hover{
+    background-color: #37517e;
+    color: goldenrod;
+    
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.lista{
+    align-items: center;
+}
+
 .menu{
-    list-style: none;
+    list-style: circle;
     padding: 0;
     background: #092327;
-    width: 90%;
-    max-width: 600px;
+    width: 125.7%;
+    max-width: 3000px;
     margin: auto;
     font-size:110%;
 }
@@ -30,12 +86,12 @@ body{
     text-decoration: none;
     color: wheat;
     padding: 20px;
-    display: block;
+    display: inline-block;
+    align-items: center;
 }
 
 .menu li{
     display: inline-block;
-    text-align: center;
 }
 
 .menu li a:hover{
@@ -56,11 +112,6 @@ body{
     background-color: #efefef;
 }
 
-header{
-    background-color: #364552;
-    color: white;
-    padding: 3rem 2rem;
-}
 
 header h1{
     font-size: 4rem;
@@ -68,9 +119,15 @@ header h1{
 }
 
 .color{
-    background-color: rgb(255, 254, 172);
-    padding: 0.5rem;
+    background-color: #37517e;
+    padding: 0.8rem;
     color: #fff;
+    list-style: circle;
+    padding: 0;
+    width: 126%;
+    max-width: 1800px;
+    margin: auto;
+    font-size:110%;
 }
 
 footer section{
@@ -114,11 +171,11 @@ footer a{
 }
 
 footer a:hover{
-    color: cornflowerblue;
+    color: #37517e;
 }
 
 .copy{
-    color: #000000;
+    color: white;
     text-align: center;
     font-size: 110%;
 }
@@ -127,90 +184,124 @@ footer a:hover{
     list-style: none;
 }
 
-.wrapper ul li{
+.social ul li{
     width: 53px;
-    height: 53px;
-    line-height: 75px;
+    height: 55px;
+    line-height: 90px;
     margin: 0 10px;
-    text-align: center;
+    text-align: lefts;
     cursor: pointer;
     border-radius: 40px;
-    float: right;
+    float: inline-start;
     transition: all 0.5s case;
 }
 
-
-.wrapper ul li .facebook{
+.social ul li .facebook{
     color: #d8e2dc;
     margin-top: 20px;
     transition: all 0.5s ease;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
-.wrapper ul li:hover.facebook{
+.social ul li:hover.facebook{
     border: 5px solid #3b5998;
     box-shadow: 0 0 15px #3b5998;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .instagram{
+.social ul li .whatsapp{
     color: #d8e2dc;
     margin-top: 30px;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover.instagram{
-    border: 5px solid #b41191;
-    box-shadow: 0 0 30px #b41191;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li .whatsapp{
-    color: #d8e2dc;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover.whatsapp{
+.social ul li:hover.whatsapp{
     border: 5px solid #24bd06;
     box-shadow: 0 0 30px #24bd06;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .youtube{
+.social ul li .youtube{
     color: #d8e2dc;
     margin-top: 30px;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover.youtube{
+.social ul li:hover.youtube{
     border: 5px solid #c70610;
     box-shadow: 0 0 30px #c70610;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .twitter{
-    color: #d8e2dc;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover.twitter{
-    border: 5px solid #5276ec;
-    box-shadow: 0 0 30px #5276ec;
-    transition: all 0.5s ease;
-}
-
 .loacation{
     text-align: initial;
-    color: #000;
+    color: white;
     font-size: 115%;
-    margin-top: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maps{
+    align-items: first baseline;
+    text-align: initial;
 }
 
 .correo{
-    text-align: end;
-    color: black;
-    font-size: 115%;
-    margin-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.donate{
+    display: inline-block;
+    background: #60bc0f;
+    padding: 0px 50px;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 48px;
+    border: 1px solid #60bc0f;
+    border-radius: 0px;
+    outline: none !important;
+    box-shadow: none !important;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 300ms linear 0s; }
+    .donate:hover {
+      background: transparent;
+      color: #e1da0f; }
+    .primary_btn.yellow_btn {
+      background: #fdbb00 !important;
+      border: 1px solid #fdbb00 !important;
+      color: #000000; }
+      .primary_btn.yellow_btn:hover {
+        background: transparent !important; 
+      }
+    }
+}
+
+.banner_content{
+    text-align: center;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    font-size: x-large;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 500px;
+}

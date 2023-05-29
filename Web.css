@@ -1,18 +1,63 @@
-html{
-    font-family: 'Montserrat', sans-serif;
-}
-
 body{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #efefef;
+    background-color: white;
 }
 
 header{
-    background-color: #364552;
-    color: white;
-    padding: 3rem 2rem;
+    display: flex;
+    height: 150px;
+    background-color: #37517e;
+    align-items: center;
+    padding: 50px;
 }
 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.lista{
+    align-items: center;
+}
+
+.menu{
+    list-style: circle;
+    padding: 0;
+    background: #092327;
+    width: 125.6%;
+    max-width: 1800px;
+    margin: auto;
+    font-size:110%;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: wheat;
+    padding: 20px;
+    display: inline-block;
+    align-items: center;
+}
+
+.menu li{
+    display: inline-block;
+}
+
+.menu li a:hover{
+    background: goldenrod;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 610px;
+}
 header h1{
     font-size: 3rem;
     text-align: center;
@@ -41,9 +86,15 @@ margin: 1rem;
 }
 
 .color{
-    background-color: rgb(255, 254, 172);
+    background-color: #37517e;
     padding: 0.8rem;
     color: #fff;
+    list-style: circle;
+    padding: 0;
+    width: 125.6%;
+    max-width: 1820px;
+    margin: auto;
+    font-size:110%;
 }
 
 footer section{
@@ -75,7 +126,7 @@ body{
 }
 
 header{
-    background-color: #364552;
+    background-color: #37517e;
     color: white;
     padding: 3rem 2rem;
 }
@@ -134,23 +185,9 @@ footer a:hover{
     color: cornflowerblue;
 }
 
-.loacation{
-    text-align: start;
-    color: #000;
-    font-size: 115%;
-}
-
-.correo{
-    text-align: end;
-    color: black;
-    font-size: 115%;
-}
-
-.all-post{
+.container{
     display: flex;
-    align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
 }
 
 .post{
@@ -162,24 +199,30 @@ footer a:hover{
     cursor: pointer;
 }
 
-.martes, .viernes{
-    text-align: center;
+.post1{
+    background-color: goldenrod;
+    border-radius: 40px;
+    width: 350px;
+    height: 650px;
+    margin: 10px;
+    cursor: pointer;
 }
+
 
 .frase{
     text-align: center;
-    color: white;
+    color: black;
 }
 
 .info, .horas{
-    color: #efefef;
+    color: black;
     text-align: center;
     font-size: 130%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: Arial, Helvetica, sans-serif
 }
 
 .copy{
-    color: #000000;
+    color: white;
     text-align: center;
     font-size: 110%;
 }
@@ -188,104 +231,173 @@ footer a:hover{
     list-style: none;
 }
 
-.wrapper ul li{
+.social ul li{
     width: 53px;
-    height: 53px;
-    line-height: 75px;
+    height: 55px;
+    line-height: 90px;
     margin: 0 10px;
-    text-align: center;
+    text-align: lefts;
     cursor: pointer;
     border-radius: 40px;
-    float: right;
+    float: inline-start;
     transition: all 0.5s case;
 }
 
-
-.wrapper ul li .facebook{
+.social ul li .facebook{
     color: #d8e2dc;
     margin-top: 20px;
     transition: all 0.5s ease;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
-.wrapper ul li:hover.facebook{
+.social ul li:hover.facebook{
     border: 5px solid #3b5998;
     box-shadow: 0 0 15px #3b5998;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .instagram{
+.social ul li .whatsapp{
     color: #d8e2dc;
     margin-top: 30px;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover.instagram{
-    border: 5px solid #b41191;
-    box-shadow: 0 0 30px #b41191;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li .whatsapp{
-    color: #d8e2dc;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover.whatsapp{
+.social ul li:hover.whatsapp{
     border: 5px solid #24bd06;
     box-shadow: 0 0 30px #24bd06;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .youtube{
+.social ul li .youtube{
     color: #d8e2dc;
     margin-top: 30px;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover.youtube{
+.social ul li:hover.youtube{
     border: 5px solid #c70610;
     box-shadow: 0 0 30px #c70610;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .twitter{
+.loacation{
+    text-align: initial;
+    color: white;
+    font-size: 115%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maps{
+    align-items: first baseline;
+    text-align: initial;
+}
+
+.correo{
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.social ul li{
+    width: 53px;
+    height: 55px;
+    line-height: 90px;
+    margin: 0 10px;
+    text-align: lefts;
+    cursor: pointer;
+    border-radius: 40px;
+    float: inline-start;
+    transition: all 0.5s case;
+}
+
+.social ul li .facebook{
+    color: #d8e2dc;
+    margin-top: 20px;
+    transition: all 0.5s ease;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.social ul li:hover.facebook{
+    border: 5px solid #3b5998;
+    box-shadow: 0 0 15px #3b5998;
+    transition: all 0.5s ease;
+}
+
+.social ul li .whatsapp{
     color: #d8e2dc;
     margin-top: 30px;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover.twitter{
-    border: 5px solid #5276ec;
-    box-shadow: 0 0 30px #5276ec;
+.social ul li:hover.whatsapp{
+    border: 5px solid #24bd06;
+    box-shadow: 0 0 30px #24bd06;
     transition: all 0.5s ease;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif
-}
-.menu{
-    list-style: none;
-    padding: 0;
-    background: #092327;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    font-size:110%;
+.social ul li .youtube{
+    color: #d8e2dc;
+    margin-top: 30px;
+    transition: all 0.5s ease;
 }
 
-.menu li a{
-    text-decoration: none;
-    color: wheat;
-    padding: 20px;
-    display: block;
+.social ul li:hover.youtube{
+    border: 5px solid #c70610;
+    box-shadow: 0 0 30px #c70610;
+    transition: all 0.5s ease;
 }
 
-.menu li{
-    display: inline-block;
+.loacation{
+    text-align: initial;
+    color: white;
+    font-size: 115%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maps{
+    align-items: first baseline;
+    text-align: initial;
+}
+
+.correo{
     text-align: center;
+    color: white;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.menu li a:hover{
-    background: goldenrod;
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}
+.all-products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.products{
+    overflow: hidden;
+    background: white;
+    color: black;
+    text-align: center;
+    width: 280px;
+    height: 380px;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1.2rem;
+    margin: 2rem;
+    cursor: pointer;
 }

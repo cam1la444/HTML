@@ -1,27 +1,33 @@
-html{
-    font-family: 'Montserrat', sans-serif;
-}
-
 body{
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
-    background-color: #efefef;
+    background-color: white;
 }
 
 header{
-    background-color: #364552;
-    color: white;
-    padding: 3rem 2rem;
+    display: flex;
+    height: 150px;
+    background-color: #37517e;
+    align-items: center;
+    padding: 50px;
 }
 
-body{
-    font-family:Arial, Helvetica, sans-serif
+
+a{
+    text-decoration: none;
+    color: white;
 }
+
+.lista{
+    align-items: center;
+}
+
 .menu{
-    list-style: none;
+    list-style: circle;
     padding: 0;
     background: #092327;
-    width: 90%;
-    max-width: 600px;
+    width: 125.6%;
+    max-width: 1820px;
     margin: auto;
     font-size:110%;
 }
@@ -30,16 +36,105 @@ body{
     text-decoration: none;
     color: wheat;
     padding: 20px;
-    display: block;
+    display: inline-block;
+    align-items: center;
 }
 
 .menu li{
     display: inline-block;
-    text-align: center;
 }
 
 .menu li a:hover{
     background: goldenrod;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.logo img{
+    height: 100px;
+    margin-right: 661px;
+}
+
+.contenedor{
+    max-width: 90%;
+    margin: 50px auto 0;
+}
+
+.contenedor .bloque{
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contenedor .bloque .image{
+    flex: 0 0 auto;
+    width: 400px;
+}
+
+.contenedor .bloque .image img{
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px #37517e;
+    transition: .3s;
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.contenedor .bloque .image:hover img{
+    transform: scale(1. 05);
+}
+
+.contenedor .bloque .contenido{
+    flex: 0 0 auto;
+    width: calc(100% - 400px);
+    box-sizing: border-box;
+    align-self: center;
+    text-align: justify;
+}
+
+.contenedor .bloque .contenido h5{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    color: #37517e;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+.contenedor .bloque .contenido  li{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+    text-align: justify;
+}
+
+
+.contenedor .bloque .contenido p{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 1px;
+    font-size: 20px;
+}
+
+
+@media screen and (min-width: 1024px) {
+    .contenedor .bloque:nth-child(odd) .image{
+        order: 1;
+    }
+    .contenedor .bloque:nth-child(even) .image{
+        order: 2;
+    }
+    .contenedor .bloque:nth-child(odd) .contenido{
+        order: 2;
+        padding-left: 30px;
+    }
+    .contenedor .bloque:nth-child(even) .contenido{
+        order: 1;
+        padding-right: 30px;
+    }
 }
 
 header h1{
@@ -56,22 +151,12 @@ body{
     background-color: #efefef;
 }
 
-header{
-    background-color: #364552;
-    color: white;
-    padding: 3rem 2rem;
-}
 
 header h1{
     font-size: 4rem;
     text-align: center;
 }
 
-.color{
-    background-color: rgb(255, 254, 172);
-    padding: 0.8rem;
-    color: #fff;
-}
 
 footer section{
     float: right;
@@ -222,38 +307,13 @@ body{
 }
 
 header{
-    background-color: #364552;
+    background-color: #37517e;
     color: white;
     padding: 3rem 2rem;
 }
 
 body{
     font-family:Arial, Helvetica, sans-serif
-}
-.menu{
-    list-style: none;
-    padding: 0;
-    background: #092327;
-    width: 90%;
-    max-width: 600px;
-    margin: auto;
-    font-size:110%;
-}
-
-.menu li a{
-    text-decoration: none;
-    color: wheat;
-    padding: 20px;
-    display: block;
-}
-
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-
-.menu li a:hover{
-    background: goldenrod;
 }
 
 header h1{
@@ -270,11 +330,6 @@ body{
     background-color: #efefef;
 }
 
-header{
-    background-color: #364552;
-    color: white;
-    padding: 3rem 2rem;
-}
 
 header h1{
     font-size: 4rem;
@@ -282,11 +337,16 @@ header h1{
 }
 
 .color{
-    background-color: rgb(255, 254, 172);
+    background-color: #37517e;
     padding: 0.8rem;
     color: #fff;
+    list-style: circle;
+    padding: 0;
+    width: 126%;
+    max-width: 1820px;
+    margin: auto;
+    font-size:110%;
 }
-
 footer section{
     float: right;
 }
@@ -332,7 +392,7 @@ footer a:hover{
 }
 
 .copy{
-    color: #000000;
+    color: white;
     text-align: center;
     font-size: 110%;
 }
@@ -341,88 +401,76 @@ footer a:hover{
     list-style: none;
 }
 
-.wrapper ul li{
+.social ul li{
     width: 53px;
-    height: 53px;
-    line-height: 75px;
+    height: 55px;
+    line-height: 90px;
     margin: 0 10px;
-    text-align: center;
+    text-align: lefts;
     cursor: pointer;
     border-radius: 40px;
-    float: right;
+    float: inline-start;
     transition: all 0.5s case;
 }
 
-
-.wrapper ul li .facebook{
+.social ul li .facebook{
     color: #d8e2dc;
     margin-top: 20px;
     transition: all 0.5s ease;
+    text-align: center;
+    padding-bottom: 25px;
 }
 
-.wrapper ul li:hover.facebook{
+.social ul li:hover.facebook{
     border: 5px solid #3b5998;
     box-shadow: 0 0 15px #3b5998;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .instagram{
+.social ul li .whatsapp{
     color: #d8e2dc;
     margin-top: 30px;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover.instagram{
-    border: 5px solid #b41191;
-    box-shadow: 0 0 30px #b41191;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li .whatsapp{
-    color: #d8e2dc;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover.whatsapp{
+.social ul li:hover.whatsapp{
     border: 5px solid #24bd06;
     box-shadow: 0 0 30px #24bd06;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .youtube{
+.social ul li .youtube{
     color: #d8e2dc;
     margin-top: 30px;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li:hover.youtube{
+.social ul li:hover.youtube{
     border: 5px solid #c70610;
     box-shadow: 0 0 30px #c70610;
     transition: all 0.5s ease;
 }
 
-.wrapper ul li .twitter{
-    color: #d8e2dc;
-    margin-top: 30px;
-    transition: all 0.5s ease;
-}
-
-.wrapper ul li:hover.twitter{
-    border: 5px solid #5276ec;
-    box-shadow: 0 0 30px #5276ec;
-    transition: all 0.5s ease;
-}
-
 .loacation{
     text-align: initial;
-    color: #000;
+    color: white;
     font-size: 115%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.maps{
+    align-items: first baseline;
+    text-align: initial;
 }
 
 .correo{
-    text-align: end;
-    color: black;
-    font-size: 115%;
+    text-align: center;
+    color: white;
+    font-size: 120%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+}

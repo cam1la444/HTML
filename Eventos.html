@@ -6,34 +6,1677 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Eventos.css">
+    <link rel="stylesheet" href="Eventos1.css">
+    <link rel="shortcut icon" type="x-icon" href="img/logo.jpg">
+  <style>
+    body {
+      background-color: transparent;
+      margin: 0;
+      padding: 0;
+    }
+
+    .calendar-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      cursor: pointer;
+    }
+
+    .calendar {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      max-width: 100%;
+      margin: 0 auto;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    .calendar-header {
+      font-weight: bold;
+      text-align: center;
+      background-color: #37517e;
+      padding: 10px;
+      border-radius: 5px;
+      grid-column: 1 / 8;
+      color: #ffd700;
+    }
+
+    .month-header {
+      font-weight: bold;
+      text-align: center;
+      color: #ffd700;
+    }
+
+    .calendar-day-header {
+      font-weight: bold;
+      text-align: center;
+      background-color: #37517e;
+      color: #ffd700;
+    }
+
+    .calendar-cell {
+      padding: 10px;
+      text-align: center;
+      border: 1px solid #37517e;
+      border-radius: 5px;
+      position: relative;
+      height: auto;
+      background-color: #d9e2ec;
+      color: #37517e;
+      font-size: 16px;
+    }
+
+    .calendar-cell .day-label {
+      white-space: nowrap;
+      font-size: 12px;
+    }
+
+    .highlighted-cell {
+      background-color: #ffe39f;
+    }
+
+    .january-day {
+      color: #d9e2ec;
+    }
+
+    .sunday, .monday, .tuesday, .wednesday, .thursday, .friday, .saturday {
+      color: #d9e2ec;
+    }
+  </style>
 </head>
 <body>
     <header id="titulo">
-        <h1>EVENTOS</h1>
-        <ul class="menu">
-            <li><a href="Inicio.html">Inicio</a></li>
-            <li><a href="Articulos.html">Articulos Religiosos</a></li>
-            <li><a href="Eventos.html">Eventos</a></li>
-            <li><a href="Web.html">Horario</a></li>
-            <li><a href="Ofrenda.html">Ofrenda</a></li>
-        </ul>
+        <header>
+            <a href="Inicio.html" class="logo">
+                <img src="img/logo.jpg" alt="logo de la compañia">
+                <h1 class="nombre-empresa">EVENTOS</h1>
+            </a>
+        </header>
     </header>
-    <footer class="color">
-        <div class="wrapper">
+    <ul class="menu">
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="Inicio.html">Inicio</a></li>
+        <li><a href="Articulos.html">Articulos Religiosos</a></li>
+        <li><a href="Eventos.html">Eventos</a></li>
+        <li><a href="Web.html">Horario</a></li>
+        <li><a href="Ofrenda.html">Ofrenda</a></li>
+        <li><a href="https://radiomevas.radio12345.com/">Radio</a></li>
+    </ul>
+
+  <div class="calendar-container">
+    <div class="calendar">
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Enero</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">1</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">2</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">3</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">4</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">9</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">10</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">11</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">16</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">17</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">18</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">23</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">24</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">25</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Febrero</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">1</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">2</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">3</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">8</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">9</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">10</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">15</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">16</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">17</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">22</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">23</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">24</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Marzo</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label"></span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label"></span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Abril</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Mayo</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Junio</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Julio</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Agosto</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Septiembre</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Octubre</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Noviembre</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-header" colspan="7">
+        <div class="month-header">Diciembre</div>
+      </div>
+      <div class="calendar-day-header sunday">Domingo</div>
+      <div class="calendar-day-header monday">Lunes</div>
+      <div class="calendar-day-header tuesday">Martes</div>
+      <div class="calendar-day-header wednesday">Miércoles</div>
+      <div class="calendar-day-header thursday">Jueves</div>
+      <div class="calendar-day-header friday">Viernes</div>
+      <div class="calendar-day-header saturday">Sábado</div>
+      <div class="calendar-cell january-day" style="color: #37517e;">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">1</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">2</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">3</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">4</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">5</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">6</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">7</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">8</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">9</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">10</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">11</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">12</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">13</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">14</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">15</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">16</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">17</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">18</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">19</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">20</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">21</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">22</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">23</span><br>
+        <span class="day-label">Culto del Ministerio Mujeres con Propósito</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">24</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">25</span><br>
+        <span class="day-label">Culto del Ministerio Hombres Colaboradores de Dios</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">26</span><br>
+        <span class="day-label">Vigilia</span>
+      </div>
+      <div class="calendar-cell highlighted-cell">
+        <span class="day-number">27</span><br>
+        <span class="day-label">Culto del Ministerio de Jóvenes Uziel</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">28</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">29</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">30</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+      <div class="calendar-cell">
+        <span class="day-number">31</span><br>
+        <span class="day-label">Culto Dominical</span>
+      </div>
+    </div>
+  </div>
+  <footer class="color">
+    <section class="footer">
+        <div class="social">
             <ul>
-                <p class="correo">CONTACTANOS POR ESTOS MEDIOS</p><a href="mailto:custoac07@gmail.com " ></a>
-                <li class="facebook"><a href="https://www.facebook.com"><img src="Img/facebook.png" width="45" height="45"</a></li>
-                <li class="twitter"><a href="https://www.twitter.com/"><img src="Img/gorjeo.png" width="45" height="45"</a></li>
-                <li class="youtube"><a href="https://www.youtube.com/"><img src="Img/youtube.png" width="45" height="45"</a></li>
-                <li class="whatsapp"><a href="https://www.whatsapp.com/"><img src="Img/whatsapp.png" width="45" height="45"</a></li>
-                <li class="instagram"><a href="https://www.instagram.com/"><img src="Img/instagram.png" width="45" height="45"</a></li></li>
-
-                <p class="loacation">ENCUENTRANOS EN</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0586723083693!2d-89.23908109999999!3d13.714896299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633004d5069e1b%3A0xbfed54a94a48bd33!2sUniversidad%20Evang%C3%A9lica%20de%20El%20Salvador!5e0!3m2!1ses!2ssv!4v1684898758903!5m2!1ses!2ssv" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </ul>
-
-        <p class="copy">Copyright <small>&copy; 2023</p>
-    </footer>
+            <p class="correo">CONTACTANOS POR ESTOS MEDIOS</p><a href="mailto:custoac07@gmail.com " ></a>
+            <li class="facebook"><a href="https://www.facebook.com"><img src="Img/facebook.png" width="45" height="45"</a></li>
+            <li class="youtube"><a href="https://www.youtube.com/@radiomevas6724/featured"><img src="Img/youtube.png" width="45" height="45"</a></li>
+            <li class="whatsapp"><a href="https://www.whatsapp.com/"><img src="Img/whatsapp.png" width="45" height="45"</a></li>
+        </ul>
+        </div>
+    </section>
+    <div class="maps">
+        <p class="loacation">ENCUENTRANOS EN</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3876.0586723083693!2d-89.23908109999999!3d13.714896299999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f633004d5069e1b%3A0xbfed54a94a48bd33!2sUniversidad%20Evang%C3%A9lica%20de%20El%20Salvador!5e0!3m2!1ses!2ssv!4v1684898758903!5m2!1ses!2ssv" width="400" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <p class="copy">Copyright <small>&copy; 2023</p>
+</footer>
 </body>
 </html>
